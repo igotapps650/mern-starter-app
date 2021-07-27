@@ -20,7 +20,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //connecting to db
-//const mongourl = "mongodb+srv://igotapps650:conDom77@cluster0.ko1ty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 try {
   mongoose.connect(
     process.env.MONGO_URL,
